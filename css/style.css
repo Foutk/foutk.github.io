@@ -1132,6 +1132,10 @@ padding-bottom: 0;
     .counters-content {
         padding: 10px 60px;
     } 
+   
+    .recent-posts-cards-item {
+       margin: 5px;
+   }
     .partners-logo {
         flex-wrap: wrap;
     }
