@@ -97,18 +97,27 @@ header {
     margin-top: 30px;
 }
 
+.nav, .menu {
+    display: flex;
+    justify-content: flex-end;
+}
 
 .navig-list {
     display: flex;
-    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
 }
 
 .navig-list-item {
     list-style: none;
    
 }
-.navig-btn {
+.burger {
     display: none;
+    margin: auto;
+    background-color: #FBFAF8;
+    border: none;
+
 }
 
 .navig-list-item-link {
@@ -1050,11 +1059,24 @@ padding-bottom: 0;
 
 @media (max-width: 768px) {
     
-    .navig-btn {
+    .burger {
         display: block;
+        position: absolute;
+        right: 20px;
+    }
+    .menu {
+    
+        top: 30px;
+        right: 0;
+        width: auto;
+        padding: 15px;
+        display: none;
     }
     .navig-list {
-       display: none;
+        display: block;
+    }
+    .navig-list-item-link {
+        display: block;
     }
     .title-text {
         width: 350px;
@@ -1066,7 +1088,7 @@ padding-bottom: 0;
         padding-left: 0;
     }
     .navig-list-item {
-        padding: 10px 5px;
+        padding: 5px;
     }
     .menu-open {
         display: block;
@@ -1132,10 +1154,6 @@ padding-bottom: 0;
     .counters-content {
         padding: 10px 60px;
     } 
-   
-    .recent-posts-cards-item {
-       margin: 5px;
-   }
     .partners-logo {
         flex-wrap: wrap;
     }
